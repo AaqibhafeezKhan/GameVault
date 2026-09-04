@@ -1,0 +1,842 @@
+export const TRIVIA_QUESTIONS = {
+  General: [
+    {
+      q: "What is the capital of France?",
+      a: "Paris",
+      options: ["Paris", "London", "Berlin", "Madrid"],
+    },
+    {
+      q: "How many continents are there?",
+      a: "7",
+      options: ["5", "6", "7", "8"],
+    },
+    {
+      q: "What is the largest ocean?",
+      a: "Pacific",
+      options: ["Atlantic", "Indian", "Pacific", "Arctic"],
+    },
+    {
+      q: "What color are emeralds?",
+      a: "Green",
+      options: ["Blue", "Green", "Red", "Yellow"],
+    },
+    {
+      q: "How many days in a leap year?",
+      a: "366",
+      options: ["364", "365", "366", "367"],
+    },
+    {
+      q: "What planet is closest to the Sun?",
+      a: "Mercury",
+      options: ["Venus", "Earth", "Mercury", "Mars"],
+    },
+    {
+      q: "How many sides does a hexagon have?",
+      a: "6",
+      options: ["5", "6", "7", "8"],
+    },
+    {
+      q: "What is the chemical symbol for water?",
+      a: "H2O",
+      options: ["CO2", "H2O", "O2", "NaCl"],
+    },
+    {
+      q: "Which country invented the printing press?",
+      a: "Germany",
+      options: ["China", "England", "Germany", "France"],
+    },
+    {
+      q: "What is the speed of light in km/s?",
+      a: "299,792",
+      options: ["150,000", "299,792", "500,000", "1,000,000"],
+    },
+    {
+      q: "What is the tallest mountain on Earth?",
+      a: "Everest",
+      options: ["K2", "Everest", "Kangchenjunga", "Makalu"],
+    },
+    {
+      q: "Who wrote Romeo and Juliet?",
+      a: "Shakespeare",
+      options: ["Dickens", "Twain", "Shakespeare", "Austen"],
+    },
+    {
+      q: "What is the boiling point of water in Celsius?",
+      a: "100",
+      options: ["90", "100", "110", "212"],
+    },
+    {
+      q: "How many bones are in the adult human body?",
+      a: "206",
+      options: ["196", "206", "216", "226"],
+    },
+    {
+      q: "What is the smallest country in the world?",
+      a: "Vatican City",
+      options: ["Monaco", "San Marino", "Vatican City", "Liechtenstein"],
+    },
+  ],
+  Science: [
+    {
+      q: "What is the powerhouse of the cell?",
+      a: "Mitochondria",
+      options: ["Nucleus", "Mitochondria", "Ribosome", "Golgi"],
+    },
+    {
+      q: "What gas do plants absorb?",
+      a: "CO2",
+      options: ["O2", "CO2", "N2", "H2"],
+    },
+    {
+      q: "What is the atomic number of carbon?",
+      a: "6",
+      options: ["4", "6", "8", "12"],
+    },
+    {
+      q: "What force keeps us on the ground?",
+      a: "Gravity",
+      options: ["Friction", "Gravity", "Magnetism", "Tension"],
+    },
+    {
+      q: "What is DNA short for?",
+      a: "Deoxyribonucleic Acid",
+      options: [
+        "Deoxyribonucleic Acid",
+        "Dynamic Nucleic Acid",
+        "Digital Nucleus Array",
+        "Distributed Network Algorithm",
+      ],
+    },
+    {
+      q: "How many elements are in the periodic table (2024)?",
+      a: "118",
+      options: ["108", "112", "118", "124"],
+    },
+    {
+      q: "What is the unit of electric current?",
+      a: "Ampere",
+      options: ["Volt", "Watt", "Ampere", "Ohm"],
+    },
+    {
+      q: "What planet has the most moons?",
+      a: "Saturn",
+      options: ["Jupiter", "Saturn", "Uranus", "Neptune"],
+    },
+    {
+      q: "What is the speed of sound in air?",
+      a: "343 m/s",
+      options: ["220 m/s", "343 m/s", "500 m/s", "1000 m/s"],
+    },
+    {
+      q: "What particle has a negative charge?",
+      a: "Electron",
+      options: ["Proton", "Neutron", "Electron", "Positron"],
+    },
+    {
+      q: "What is the chemical symbol for gold?",
+      a: "Au",
+      options: ["Go", "Gd", "Au", "Ag"],
+    },
+    {
+      q: "What is the hardest natural substance?",
+      a: "Diamond",
+      options: ["Quartz", "Graphite", "Diamond", "Titanium"],
+    },
+    {
+      q: "How many chambers does a human heart have?",
+      a: "4",
+      options: ["2", "3", "4", "6"],
+    },
+    {
+      q: "What is photosynthesis?",
+      a: "Light to energy conversion",
+      options: [
+        "Respiration",
+        "Light to energy conversion",
+        "Cell division",
+        "DNA replication",
+      ],
+    },
+    {
+      q: "What is absolute zero in Celsius?",
+      a: "-273.15",
+      options: ["-100", "-200", "-273.15", "-300"],
+    },
+  ],
+  History: [
+    {
+      q: "Who was the first US President?",
+      a: "George Washington",
+      options: [
+        "Abraham Lincoln",
+        "George Washington",
+        "Thomas Jefferson",
+        "John Adams",
+      ],
+    },
+    {
+      q: "In what year did WW2 end?",
+      a: "1945",
+      options: ["1943", "1944", "1945", "1946"],
+    },
+    {
+      q: "Where was Napoleon exiled to?",
+      a: "Saint Helena",
+      options: ["Elba", "Corsica", "Saint Helena", "Malta"],
+    },
+    {
+      q: "Who built the Great Wall of China?",
+      a: "Qin Dynasty",
+      options: ["Han Dynasty", "Qin Dynasty", "Tang Dynasty", "Ming Dynasty"],
+    },
+    {
+      q: "When did the Berlin Wall fall?",
+      a: "1989",
+      options: ["1985", "1987", "1989", "1991"],
+    },
+    {
+      q: "Who discovered America?",
+      a: "Columbus",
+      options: ["Vespucci", "Magellan", "Columbus", "Cabot"],
+    },
+    {
+      q: "What empire was Julius Caesar part of?",
+      a: "Roman",
+      options: ["Greek", "Ottoman", "Roman", "Byzantine"],
+    },
+    {
+      q: "In what year did WW1 begin?",
+      a: "1914",
+      options: ["1910", "1912", "1914", "1916"],
+    },
+    {
+      q: "Who was the first man on the Moon?",
+      a: "Neil Armstrong",
+      options: ["Buzz Aldrin", "Neil Armstrong", "Yuri Gagarin", "John Glenn"],
+    },
+    {
+      q: "What ancient wonder was in Alexandria?",
+      a: "The Lighthouse",
+      options: ["The Colossus", "The Lighthouse", "The Library", "The Sphinx"],
+    },
+    {
+      q: "Which country colonized India?",
+      a: "Britain",
+      options: ["France", "Portugal", "Spain", "Britain"],
+    },
+    {
+      q: "Who painted the Sistine Chapel?",
+      a: "Michelangelo",
+      options: ["Da Vinci", "Raphael", "Michelangelo", "Botticelli"],
+    },
+    {
+      q: "When did the French Revolution begin?",
+      a: "1789",
+      options: ["1775", "1789", "1799", "1805"],
+    },
+    {
+      q: "Who was Cleopatra?",
+      a: "Egyptian Queen",
+      options: [
+        "Roman Empress",
+        "Egyptian Queen",
+        "Greek Goddess",
+        "Persian Princess",
+      ],
+    },
+    {
+      q: "What ship sank in 1912?",
+      a: "Titanic",
+      options: ["Britannic", "Lusitania", "Titanic", "Olympic"],
+    },
+  ],
+  Geography: [
+    {
+      q: "What is the longest river in the world?",
+      a: "Nile",
+      options: ["Amazon", "Nile", "Yangtze", "Mississippi"],
+    },
+    {
+      q: "What is the capital of Australia?",
+      a: "Canberra",
+      options: ["Sydney", "Melbourne", "Canberra", "Brisbane"],
+    },
+    {
+      q: "Which country has the most land area?",
+      a: "Russia",
+      options: ["Canada", "USA", "China", "Russia"],
+    },
+    {
+      q: "What is the smallest continent?",
+      a: "Australia",
+      options: ["Europe", "Antarctica", "Australia", "South America"],
+    },
+    {
+      q: "What is the capital of Japan?",
+      a: "Tokyo",
+      options: ["Osaka", "Kyoto", "Tokyo", "Hiroshima"],
+    },
+    {
+      q: "Which mountain range is the longest?",
+      a: "Andes",
+      options: ["Himalayas", "Rockies", "Alps", "Andes"],
+    },
+    {
+      q: "What ocean is the Bermuda Triangle in?",
+      a: "Atlantic",
+      options: ["Pacific", "Indian", "Atlantic", "Arctic"],
+    },
+    {
+      q: "What country has the most natural lakes?",
+      a: "Canada",
+      options: ["Russia", "USA", "Finland", "Canada"],
+    },
+    {
+      q: "What is the driest place on Earth?",
+      a: "Atacama Desert",
+      options: ["Sahara", "Gobi", "Atacama Desert", "Death Valley"],
+    },
+    {
+      q: "What country is the Amazon in?",
+      a: "Brazil",
+      options: ["Peru", "Colombia", "Brazil", "Venezuela"],
+    },
+    {
+      q: "What is the capital of Canada?",
+      a: "Ottawa",
+      options: ["Toronto", "Vancouver", "Montreal", "Ottawa"],
+    },
+    {
+      q: "How many countries are in Africa?",
+      a: "54",
+      options: ["44", "54", "64", "74"],
+    },
+    {
+      q: "What is the largest desert in the world?",
+      a: "Antarctic Desert",
+      options: ["Sahara", "Gobi", "Arabian", "Antarctic Desert"],
+    },
+    {
+      q: "Where is the Dead Sea located?",
+      a: "Jordan/Israel",
+      options: ["Egypt/Libya", "Jordan/Israel", "Turkey/Greece", "Iraq/Iran"],
+    },
+    {
+      q: "What country has the most population?",
+      a: "India",
+      options: ["China", "India", "USA", "Indonesia"],
+    },
+  ],
+  Sports: [
+    {
+      q: "How many players in a soccer team?",
+      a: "11",
+      options: ["9", "10", "11", "12"],
+    },
+    {
+      q: "What sport uses a puck?",
+      a: "Ice Hockey",
+      options: ["Lacrosse", "Field Hockey", "Ice Hockey", "Polo"],
+    },
+    {
+      q: "How many sets in a Wimbledon final?",
+      a: "5",
+      options: ["3", "4", "5", "6"],
+    },
+    {
+      q: "What country invented basketball?",
+      a: "USA",
+      options: ["Canada", "USA", "UK", "Spain"],
+    },
+    {
+      q: "How many rings are in the Olympic symbol?",
+      a: "5",
+      options: ["4", "5", "6", "7"],
+    },
+    {
+      q: "What sport is played at Wimbledon?",
+      a: "Tennis",
+      options: ["Cricket", "Badminton", "Squash", "Tennis"],
+    },
+    {
+      q: "How long is a marathon?",
+      a: "42.195 km",
+      options: ["40 km", "42 km", "42.195 km", "44 km"],
+    },
+    {
+      q: "What is the perfect score in bowling?",
+      a: "300",
+      options: ["250", "280", "300", "320"],
+    },
+    {
+      q: "The Tour de France is a race using what?",
+      a: "Bicycle",
+      options: ["Car", "Motorcycle", "Bicycle", "Horse"],
+    },
+    {
+      q: "How many points is a touchdown in American football?",
+      a: "6",
+      options: ["3", "6", "7", "8"],
+    },
+    {
+      q: "What is the fastest land animal?",
+      a: "Cheetah",
+      options: ["Leopard", "Lion", "Cheetah", "Greyhound"],
+    },
+    {
+      q: "How many gold medals did M. Phelps win in 2008?",
+      a: "8",
+      options: ["6", "7", "8", "9"],
+    },
+    {
+      q: "What sport does Kylian Mbappe play?",
+      a: "Soccer",
+      options: ["Rugby", "Tennis", "Basketball", "Soccer"],
+    },
+    {
+      q: "How many bases on a baseball field?",
+      a: "4",
+      options: ["3", "4", "5", "6"],
+    },
+    {
+      q: "What country won the most World Cup titles?",
+      a: "Brazil",
+      options: ["Germany", "Italy", "Argentina", "Brazil"],
+    },
+  ],
+  Movies: [
+    {
+      q: "Who directed Inception?",
+      a: "Christopher Nolan",
+      options: [
+        "Steven Spielberg",
+        "James Cameron",
+        "Christopher Nolan",
+        "Ridley Scott",
+      ],
+    },
+    {
+      q: "What film won Best Picture 2020?",
+      a: "Parasite",
+      options: ["1917", "Joker", "Ford v Ferrari", "Parasite"],
+    },
+    {
+      q: "Who played Iron Man?",
+      a: "Robert Downey Jr",
+      options: [
+        "Chris Evans",
+        "Chris Hemsworth",
+        "Robert Downey Jr",
+        "Mark Ruffalo",
+      ],
+    },
+    {
+      q: "What year was the original Star Wars released?",
+      a: "1977",
+      options: ["1975", "1977", "1979", "1981"],
+    },
+    {
+      q: "Who directed Titanic?",
+      a: "James Cameron",
+      options: [
+        "Steven Spielberg",
+        "James Cameron",
+        "Michael Bay",
+        "Ron Howard",
+      ],
+    },
+    {
+      q: "What is the highest-grossing film ever?",
+      a: "Avatar",
+      options: ["Avengers", "Titanic", "Avatar", "The Lion King"],
+    },
+    {
+      q: "Who played Forrest Gump?",
+      a: "Tom Hanks",
+      options: ["Tom Cruise", "Brad Pitt", "Tom Hanks", "Matt Damon"],
+    },
+    {
+      q: "What studio made Toy Story?",
+      a: "Pixar",
+      options: ["Disney", "DreamWorks", "Pixar", "Universal"],
+    },
+    {
+      q: "How many Jurassic Park films exist (2024)?",
+      a: "6",
+      options: ["4", "5", "6", "7"],
+    },
+    {
+      q: "Who wrote The Godfather novel?",
+      a: "Mario Puzo",
+      options: [
+        "Francis Coppola",
+        "Martin Scorsese",
+        "Mario Puzo",
+        "Truman Capote",
+      ],
+    },
+    {
+      q: "What is the name of Bruce Wayne's butler?",
+      a: "Alfred",
+      options: ["James", "Alfred", "Edward", "Thomas"],
+    },
+    {
+      q: "Who played Jack in Titanic?",
+      a: "Leonardo DiCaprio",
+      options: [
+        "Brad Pitt",
+        "Johnny Depp",
+        "Leonardo DiCaprio",
+        "Orlando Bloom",
+      ],
+    },
+    {
+      q: "What language was most of Parasite spoken in?",
+      a: "Korean",
+      options: ["Chinese", "Japanese", "Korean", "Thai"],
+    },
+    {
+      q: "Who composed the Jaws theme?",
+      a: "John Williams",
+      options: [
+        "Hans Zimmer",
+        "John Williams",
+        "Ennio Morricone",
+        "Howard Shore",
+      ],
+    },
+    {
+      q: "What film features the character Hannibal Lecter?",
+      a: "Silence of the Lambs",
+      options: ["Psycho", "Se7en", "Silence of the Lambs", "American Psycho"],
+    },
+  ],
+};
+
+export const WHEEL_PHRASES = [
+  { phrase: "HAPPY NEW YEAR", hint: "A common celebration greeting" },
+  { phrase: "ROCK AND ROLL", hint: "A genre of music" },
+  { phrase: "BACK TO THE FUTURE", hint: "A classic movie title" },
+  { phrase: "LIGHTS CAMERA ACTION", hint: "A phrase on a film set" },
+  { phrase: "THE QUICK BROWN FOX", hint: "A famous typing sentence start" },
+];
+
+export const CROSSWORD_PUZZLES = [
+  {
+    grid: [
+      [1, 1, 1, 0, 0],
+      [0, 0, 1, 0, 0],
+      [0, 1, 1, 1, 0],
+      [0, 0, 1, 0, 0],
+      [0, 0, 1, 0, 0],
+    ],
+    solution: [
+      ["C", "A", "T", "-", "-"],
+      ["-", "-", "O", "-", "-"],
+      ["-", "D", "P", "E", "-"],
+      ["-", "-", "E", "-", "-"],
+      ["-", "-", "N", "-", "-"],
+    ],
+    clues: {
+      across: [{ num: 1, clue: "A feline pet (3)", row: 0, col: 0, len: 3 }],
+      down: [
+        { num: 1, clue: "Opens something (4)", row: 0, col: 2, len: 5 },
+        { num: 2, clue: "Gives a gift (3)", row: 2, col: 1, len: 4 },
+      ],
+    },
+  },
+];
+
+export const MATH_PROBLEMS = {
+  easy: [
+    { question: "4 + 9", answer: 13 },
+    { question: "15 - 7", answer: 8 },
+    { question: "6 × 3", answer: 18 },
+    { question: "20 ÷ 4", answer: 5 },
+    { question: "12 + 8", answer: 20 },
+    { question: "30 - 14", answer: 16 },
+    { question: "7 × 4", answer: 28 },
+    { question: "36 ÷ 6", answer: 6 },
+    { question: "9 + 16", answer: 25 },
+    { question: "50 - 23", answer: 27 },
+    { question: "8 × 5", answer: 40 },
+    { question: "45 ÷ 9", answer: 5 },
+    { question: "13 + 17", answer: 30 },
+    { question: "40 - 19", answer: 21 },
+    { question: "3 × 9", answer: 27 },
+    { question: "56 ÷ 7", answer: 8 },
+    { question: "18 + 14", answer: 32 },
+    { question: "60 - 35", answer: 25 },
+    { question: "11 × 2", answer: 22 },
+    { question: "72 ÷ 8", answer: 9 },
+  ],
+  medium: [
+    { question: "17 × 6", answer: 102 },
+    { question: "144 ÷ 12", answer: 12 },
+    { question: "53 + 78", answer: 131 },
+    { question: "200 - 143", answer: 57 },
+    { question: "25 × 8", answer: 200 },
+    { question: "169 ÷ 13", answer: 13 },
+    { question: "96 + 75", answer: 171 },
+    { question: "300 - 127", answer: 173 },
+    { question: "14 × 9", answer: 126 },
+    { question: "225 ÷ 15", answer: 15 },
+    { question: "88 + 94", answer: 182 },
+    { question: "500 - 263", answer: 237 },
+    { question: "19 × 7", answer: 133 },
+    { question: "256 ÷ 16", answer: 16 },
+    { question: "67 + 88", answer: 155 },
+    { question: "400 - 187", answer: 213 },
+    { question: "23 × 4", answer: 92 },
+    { question: "121 ÷ 11", answer: 11 },
+    { question: "75 + 97", answer: 172 },
+    { question: "600 - 348", answer: 252 },
+  ],
+  hard: [
+    { question: "47 × 23", answer: 1081 },
+    { question: "1024 ÷ 32", answer: 32 },
+    { question: "√144", answer: 12 },
+    { question: "2^10", answer: 1024 },
+    { question: "13 × 17", answer: 221 },
+    { question: "3456 ÷ 48", answer: 72 },
+    { question: "√289", answer: 17 },
+    { question: "3^5", answer: 243 },
+    { question: "29 × 31", answer: 899 },
+    { question: "2025 ÷ 45", answer: 45 },
+    { question: "√576", answer: 24 },
+    { question: "2^8", answer: 256 },
+    { question: "53 × 47", answer: 2491 },
+    { question: "1764 ÷ 42", answer: 42 },
+    { question: "√625", answer: 25 },
+    { question: "4^4", answer: 256 },
+    { question: "37 × 43", answer: 1591 },
+    { question: "3600 ÷ 60", answer: 60 },
+    { question: "√196", answer: 14 },
+    { question: "6^3", answer: 216 },
+  ],
+};
+
+export const NUMBER_SEQUENCES = {
+  Easy: [
+    {
+      sequence: [2, 4, 6, 8, 10],
+      answer: 12,
+      hint: "Add 2 each time",
+      explanation: "+2 (even numbers)",
+    },
+    {
+      sequence: [1, 3, 5, 7, 9],
+      answer: 11,
+      hint: "Add 2 to odd numbers",
+      explanation: "+2 (odd numbers)",
+    },
+    {
+      sequence: [5, 10, 15, 20, 25],
+      answer: 30,
+      hint: "Multiples of 5",
+      explanation: "+5",
+    },
+    {
+      sequence: [3, 6, 9, 12, 15],
+      answer: 18,
+      hint: "Multiples of 3",
+      explanation: "+3",
+    },
+    {
+      sequence: [100, 90, 80, 70, 60],
+      answer: 50,
+      hint: "Counting down by 10",
+      explanation: "-10",
+    },
+    {
+      sequence: [1, 2, 4, 8, 16],
+      answer: 32,
+      hint: "Each number doubles",
+      explanation: "×2",
+    },
+    {
+      sequence: [10, 20, 30, 40, 50],
+      answer: 60,
+      hint: "Multiples of 10",
+      explanation: "+10",
+    },
+    {
+      sequence: [7, 14, 21, 28, 35],
+      answer: 42,
+      hint: "Multiples of 7",
+      explanation: "+7",
+    },
+    {
+      sequence: [1, 4, 9, 16, 25],
+      answer: 36,
+      hint: "Perfect squares",
+      explanation: "n²",
+    },
+    {
+      sequence: [2, 3, 5, 8, 13],
+      answer: 21,
+      hint: "Add the two previous numbers",
+      explanation: "Fibonacci",
+    },
+    {
+      sequence: [50, 45, 40, 35, 30],
+      answer: 25,
+      hint: "Counting back",
+      explanation: "-5",
+    },
+    {
+      sequence: [1, 1, 2, 3, 5],
+      answer: 8,
+      hint: "Famous mathematical pattern",
+      explanation: "Fibonacci",
+    },
+  ],
+  Medium: [
+    {
+      sequence: [2, 6, 18, 54, 162],
+      answer: 486,
+      hint: "Multiply by 3",
+      explanation: "×3",
+    },
+    {
+      sequence: [1, 4, 9, 16, 25, 36],
+      answer: 49,
+      hint: "Perfect squares",
+      explanation: "n²",
+    },
+    {
+      sequence: [3, 7, 13, 21, 31],
+      answer: 43,
+      hint: "Differences increase by 2",
+      explanation: "+4,+6,+8,+10,+12",
+    },
+    {
+      sequence: [128, 64, 32, 16, 8],
+      answer: 4,
+      hint: "Halving",
+      explanation: "÷2",
+    },
+    {
+      sequence: [1, 3, 6, 10, 15],
+      answer: 21,
+      hint: "Triangular numbers",
+      explanation: "+2,+3,+4,+5,+6",
+    },
+    {
+      sequence: [2, 5, 11, 23, 47],
+      answer: 95,
+      hint: "Double and add 1",
+      explanation: "×2+1",
+    },
+    {
+      sequence: [1, 8, 27, 64, 125],
+      answer: 216,
+      hint: "Cubes",
+      explanation: "n³",
+    },
+    {
+      sequence: [5, 11, 23, 47, 95],
+      answer: 191,
+      hint: "Double and add 1",
+      explanation: "×2+1",
+    },
+    {
+      sequence: [4, 8, 14, 22, 32],
+      answer: 44,
+      hint: "Differences increase",
+      explanation: "+4,+6,+8,+10,+12",
+    },
+    {
+      sequence: [1000, 100, 10, 1],
+      answer: 0,
+      hint: "Divide by 10",
+      explanation: "÷10",
+    },
+    {
+      sequence: [2, 4, 12, 48, 240],
+      answer: 1440,
+      hint: "Multiply by 1,2,3,4...",
+      explanation: "×1,×2,×3,×4,×5,×6",
+    },
+    {
+      sequence: [19, 17, 14, 10, 5],
+      answer: -1,
+      hint: "Differences increase",
+      explanation: "-2,-3,-4,-5,-6",
+    },
+  ],
+  Hard: [
+    {
+      sequence: [1, 2, 4, 7, 11, 16],
+      answer: 22,
+      hint: "Differences: 1,2,3,4,5",
+      explanation: "Increasing differences",
+    },
+    {
+      sequence: [2, 3, 5, 7, 11, 13],
+      answer: 17,
+      hint: "Only divisible by 1 and themselves",
+      explanation: "Prime numbers",
+    },
+    {
+      sequence: [0, 1, 1, 2, 3, 5, 8],
+      answer: 13,
+      hint: "Famous pattern named after Italian mathematician",
+      explanation: "Fibonacci",
+    },
+    {
+      sequence: [1, 5, 14, 30, 55],
+      answer: 91,
+      hint: "Sum of squares",
+      explanation: "Sum of first n squares",
+    },
+    {
+      sequence: [4, 5, 9, 14, 23, 37],
+      answer: 60,
+      hint: "Add two previous terms",
+      explanation: "Fibonacci-like",
+    },
+    {
+      sequence: [1, 3, 7, 15, 31, 63],
+      answer: 127,
+      hint: "Double and add 1",
+      explanation: "2ⁿ-1",
+    },
+    {
+      sequence: [2, 5, 14, 41, 122],
+      answer: 365,
+      hint: "Multiply by 3 and subtract 1",
+      explanation: "×3-1",
+    },
+    {
+      sequence: [1, 6, 21, 66, 201],
+      answer: 606,
+      hint: "×3+3",
+      explanation: "Multiply by 3 add 3",
+    },
+    {
+      sequence: [16, 8, 4, 2, 1],
+      answer: 0,
+      hint: "Halving (allowing fractions rounding)",
+      explanation: "÷2",
+    },
+    {
+      sequence: [1, 2, 6, 24, 120],
+      answer: 720,
+      hint: "Factorials",
+      explanation: "n!",
+    },
+    {
+      sequence: [3, 5, 10, 12, 24, 26],
+      answer: 52,
+      hint: "Alternating: +2, ×2",
+      explanation: "+2,×2 alternating",
+    },
+    {
+      sequence: [7, 11, 18, 29, 47],
+      answer: 76,
+      hint: "Add two previous",
+      explanation: "Fibonacci-like starting 7,11",
+    },
+  ],
+};
